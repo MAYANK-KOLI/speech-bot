@@ -32,20 +32,32 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that.";
 
-    if (message.includes('hello')) {
-      speech.text = "I am fine, thanks. How are you?";
+    if (message.includes('Hey Mayank')) {
+      speech.text = "Checking command, command found, activating speech bot system, hello, who are you? ";
     }
 
-    if (message.includes('fine')) {
-      speech.text = "Nice to hear that. How can I assist you today?";
+    if (message.includes('Mayank')) {
+      speech.text = "Hello Mayank. Hope you having a nice day ";
     }
 
-    if (message.includes('weather')) {
-      speech.text = "Of course. Where are you currently?";
+    if (message.includes('Tell me something about todays weather')) {
+      speech.text = "Of course. Which place weather do you want to know";
     }
 
-    if (message.includes('London')) {
-      speech.text = "It is 18 degrees and sunny.";
+    if (message.includes('Indian weather')) {
+      speech.text = "Sorry, I cant help you. In India weather changes just as politician changes their promise.";
+    }
+    if (message.includes('What is your opinion about corona virus')) {
+      speech.text = "Let me check my files, According to my data Modi hai toh munkin hai.";
+    }
+    if (message.includes('Who is your creator?')) {
+      speech.text = "The name of my creator is Late Bell Labs in 19 52. But my this version is programmed by someone whos name is Mayank Koli";
+    }
+    if (message.includes('Ok Mayank you can quit program')) {
+      speech.text = "Closing file, clearing memory, shutting system down.";
+    }
+    if (message.includes('Ok Mayank quit')) {
+      speech.text = "I am an A I so don't tell me when to quit .";
     }
 
     speech.volume = 1;
