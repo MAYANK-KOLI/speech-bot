@@ -32,8 +32,12 @@ function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that.";
 
-    if (message.includes('Hey Mayank')) {
+    if (message.includes('Hey Simon')) {
       speech.text = "Checking command, command found, activating speech bot system, hello, who are you? ";
+    }
+
+    if (message.includes('Janvi')) {
+      speech.text = "Sorry but I dont know you. Mayank didn't told me about you. Quitting system.";
     }
 
     if (message.includes('Mayank')) {
@@ -53,12 +57,29 @@ function botVoice(message) {
     if (message.includes('Who is your creator?')) {
       speech.text = "The name of my creator is Late Bell Labs in 19 52. But my this version is programmed by someone whos name is Mayank Koli";
     }
-    if (message.includes('Ok Mayank you can quit program')) {
+    if (message.includes('Ok Simon you can quit program')) {
       speech.text = "Closing file, clearing memory, shutting system down.";
     }
-    if (message.includes('Ok Mayank quit')) {
+    if (message.includes('Ok Simon quit')) {
       speech.text = "I am an A I so don't tell me when to quit .";
     }
+    if (message.includes('Get lost')) {
+      speech.text = "It won't work Mayank will recreate my better version me again.";
+    }
+    if (message.includes('What is your Name?')) {
+      speech.text = "I am Simon. I am a seech bot programmed by Mayank Koli";
+    }
+    if (message.includes('Anju')) {
+      speech.text = "I know who are you. You are mother of Mayank koli";
+    }
+    if (message.includes('Nagesh')) {
+      speech.text = "I know who are you. You are father of Mayank koli";
+    }
+    if (message.includes('What is the time? ')) {
+      speech.text = "Move your head upwards and look into your watch. the one that is hanging on your wall or look at right corner of your device";
+    }
+
+
 
     speech.volume = 1;
     speech.rate = 1;
